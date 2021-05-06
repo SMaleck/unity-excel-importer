@@ -1,0 +1,19 @@
+﻿<CODEGEN_NOTICE>
+
+using System;
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace <NAMESPACE>
+{
+    public class <CLASS_NAME> : ScriptableObject
+    {
+        [Serializable]
+        public class Row
+        {
+<FIELDS>
+        }
+
+        public List<Row> Rows = new List<Row>();
+    }
+}

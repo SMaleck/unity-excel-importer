@@ -1,0 +1,21 @@
+{
+    "name": "com.smaleck.excel-importer",
+    "version": "1.0.0",
+    "displayName": "Excel Importer for Unity",
+    "description": "Allows Importing data from Excel to Unity as a ScriptableObject",
+    "unity": "2019.1",
+    "unityRelease": "0b5",
+    "dependencies": {
+        "com.unity.test-framework": "^1.1.24"
+    },
+    "keywords": [
+        "excel",
+        "data",
+        "import"
+    ],
+    "author": {
+        "name": "Sebastian Maleck",
+        "email": "s.maleck@live.de",
+        "url": "https://github.com/SMaleck/unity-excel-importer"
+    }
+}
