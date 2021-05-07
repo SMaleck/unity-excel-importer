@@ -4,7 +4,7 @@ namespace ExcelImporter.Editor
 {
     public static class Settings
     {
-        public static string SettingsPath = PathUtils.LocalPath + "/ExcelImporterSettings.asset";
+        public static string SettingsPath = "Assets/Packages/ExcelImporter/ExcelImporterSettings.asset";
 
         private static ExcelImporterSettings _instance;
         private static ExcelImporterSettings Instance => _instance ?? (_instance = LoadSettings());
@@ -23,6 +23,7 @@ namespace ExcelImporter.Editor
             if (!EditorUtils.LoadOrCreateAsset<ExcelImporterSettings>(SettingsPath, out var asset))
             {
                 asset.ResetDefaults();
+                EditorUtils.SaveAndRefresh();
             }
 
             return asset;
@@ -32,6 +33,8 @@ namespace ExcelImporter.Editor
         {
             Reload();
             _instance.ResetDefaults();
+
+            EditorUtils.SaveAndRefresh();
         }
 
         public static void Reload()

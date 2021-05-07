@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace ExcelImporter.Editor.Utility
 {
-    internal class EditorUtils
+    internal static class EditorUtils
     {
         private const string ErrorTitle = "Excel Importer Error";
         private const string Ok = "Ok";
@@ -78,6 +78,12 @@ namespace ExcelImporter.Editor.Utility
         {
             asset = (TAsset)AssetDatabase.LoadAssetAtPath(filePath, typeof(TAsset));
             return asset != null;
+        }
+
+        public static void SaveAndRefresh()
+        {
+            AssetDatabase.SaveAssets();
+            AssetDatabase.Refresh();
         }
     }
 }
