@@ -6,6 +6,8 @@ This package uses [NPOI v2.1.3.1](https://www.nuget.org/packages/NPOI/2.1.3.1).
 This is an outdated and officially deprecated version. However it has no additional dependencies of its own, which makes it much easier to include, as you cannot use NuGet to resolve those in Unity. As this package does not need any advanced NPOI features and just needs it for reading excel files, this version will suffice.
 
 ## Quick Start
+> See the releases or the [CHANGELOG](./Packages/com.smaleck.excel-importer/CHANGELOG.md) for the current version.
+
 To use this package in your Unity project, you have to manually add it to you `manifest.json`.
 
 1. Go to `YourProject/Packages/`
@@ -16,10 +18,7 @@ To use this package in your Unity project, you have to manually add it to you `m
 ```json
 {
   "dependencies": {
-    "com.smaleck.excel-importer": "git://github.com/SMaleck/unity-excel-importer.git?path=/Packages/com.smaleck.excel-importer"
+    "com.smaleck.excel-importer": "git://github.com/SMaleck/unity-excel-importer.git#v1.0.0"
   }
 }
 ```
-
-## How To
-See [here](./Packages/com.smaleck.excel-importer/README.md) for for documentation.
