@@ -1,7 +1,7 @@
 {
     "name": "com.smaleck.excel-importer",
     "version": "1.0.0",
-    "displayName": "Excel Importer for Unity",
+    "displayName": "Excel Importer",
     "description": "Allows Importing data from Excel to Unity as a ScriptableObject",
     "unity": "2019.1",
     "unityRelease": "0b5",

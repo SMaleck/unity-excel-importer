@@ -22,3 +22,6 @@ To use this package in your Unity project, you have to manually add it to you `m
   }
 }
 ```
+
+## How To
+See the [documentation](./Documentation/ExcelImporter.md) for details.

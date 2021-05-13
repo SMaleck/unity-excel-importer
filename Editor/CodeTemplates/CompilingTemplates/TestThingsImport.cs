@@ -6,6 +6,7 @@
  * -----------------------------------------------------*/
 
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Game.Data.Imports
@@ -24,6 +25,6 @@ namespace Game.Data.Imports
 
         }
 
-        public TestThingsImport_TEMPLATE() : base() { }
+        public List<Row> Rows = new List<Row>();
     }
 }

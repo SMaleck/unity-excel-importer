@@ -1,3 +1,4 @@
+using System.IO;
 using ExcelImporter.Editor.Constants;
 using ExcelImporter.Editor.Utility;
 using UnityEditor;
@@ -9,6 +10,11 @@ namespace ExcelImporter.Editor.EditorMenus
         [MenuItem(MenuConstants.MenuRoot + "/OpenSettings", priority = MenuConstants.Priority1)]
         public static void OpenSettings()
         {
+            if (!File.Exists(Settings.SettingsPath))
+            {
+                Settings.Reload();
+            }
+
             Selection.activeObject = AssetDatabase.LoadMainAssetAtPath(Settings.SettingsPath);
         }
 
