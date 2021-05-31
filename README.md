@@ -18,7 +18,7 @@ To use this package in your Unity project, you have to manually add it to you `m
 ```json
 {
   "dependencies": {
-    "com.smaleck.excel-importer": "git://github.com/SMaleck/unity-excel-importer.git#v1.0.0"
+    "com.smaleck.excel-importer": "git://github.com/SMaleck/unity-excel-importer.git#v1.0.1"
   }
 }
 ```
